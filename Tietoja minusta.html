@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Tietoja minusta </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Albulena Shabani</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="Tietoja minusta.html">Tietoja minusta</a></li>
+        <li><a href="osaaminen ja työkokemus.html">Osaaminen ja työkokemus</a></li>
+        <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+<section class="hero">
+  <div class="hero-content">
+
+    <!-- LEFT SIDE: image slider -->
+    <div class="slider-container">
+      <div class="slides">
+        <img src="IMG_5.jpg" alt="Minä 1">
+        <img src="IMG_4.jpg" alt="Minä 2">
+        <img src="IMG_2.jpg" alt="Minä 3">
+      </div>
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <!-- RIGHT SIDE: text -->
+    <div class="hero-text">
+      <h2>KUKA MINÄ OLEN?</h2>
+      <p>Nimeni on Albulena Shabani, ja olen 22-vuotias nuori, joka on aina ollut utelias oppimaan uutta ja kehittämään itseään niin henkilökohtaisesti kuin ammatillisestikin. Kasvaminen ja oppiminen ovat minulle tärkeitä arvoja, ja pyrin aina ottamaan vastaan uusia haasteita, jotka auttavat minua kehittymään. Olen saanut paljon kokemusta erilaisista projekteista, ja jokainen uusi tilanne on opettanut minulle jotain uutta niin työelämässä kuin opiskelujen parissa.
+         Olen erityisen kiinnostunut teknologiasta, viestinnästä ja luovista projekteista. Näiden kiinnostuksen kohteiden kautta olen kehittänyt taitojani monipuolisesti ja oppinut soveltamaan tietoa käytännössä. Uskon, että jatkuva oppiminen ja uteliaisuus ovat avainasemassa sekä ammatillisessa menestyksessä että henkilökohtaisessa kasvussa. Motivoituneisuus, vastuullisuus ja sopeutumiskyky ovat ominaisuuksia, joita pidän itsessäni vahvuuksina.</P>
+    </section>
+
+ <section class="under-image-text">
+ <p>Työskentelen mielelläni sekä itsenäisesti että tiimissä, ja pidän siitä, että voin jakaa tietoa ja oppia muiden kokemuksista. Olen oppinut, että yhteistyö ja avoin kommunikaatio ovat avain tehokkaaseen työskentelyyn ja hyviin tuloksiin. Vapaa-ajallani nautin lukemisesta, matkustamisesta ja luovista projekteista. Harrastukseni antavat minulle energiaa, inspiraatiota ja luovuutta, jotka heijastuvat myös ammatillisiin tavoitteisiini. Uskon, että tasapaino työn, opiskelun ja vapaa-ajan välillä on tärkeää, jotta voi kehittyä kokonaisvaltaisesti ja saavuttaa omat päämääränsä.</p>
+ </p>
+ <p>Tavoitteenani on löytää ura, jossa voin hyödyntää vahvuuksiani, oppia uutta ja tuoda lisäarvoa ympärilläni oleville ihmisille. Olen sitoutunut tekemään parhaani jokaisessa projektissa ja tehtävässä, johon tartun, ja pyrin jatkuvasti kehittämään taitojani sekä laajentamaan näkökulmaani. Olen kiitollinen kaikista mahdollisuuksista, joita elämä on minulle tähän asti tarjonnut, ja odotan innolla tulevia haasteita ja kokemuksia. Uskon, että uteliaisuus, motivaatio ja jatkuva oppiminen vievät pitkälle, ja haluan jatkossakin kasvaa sekä ihmisenä että ammattilaisena.</p>
+ </section>
+
+
+
+ 
+  <!-- Quote section -->
+  <section class="quote">
+    <blockquote>
+      “Uskon, että jatkuva oppiminen ja uteliaisuus vievät pitkälle.”
+      <span>- Albulena Shabani</span>
+    </blockquote>
+  </section>
+
+
+
+<script>
+  let slideIndex = 0;
+  function moveSlide(direction) {
+    const slides = document.querySelector('.slides');
+    const totalSlides = slides.children.length;
+    slideIndex += direction;
+    if (slideIndex < 0) slideIndex = totalSlides - 1;
+    else if (slideIndex >= totalSlides) slideIndex = 0;
+    slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+  }
+</script>
+
+
+
+ <footer>
+    <p>&copy; 2025 Albulena Shabani</p>
+    <p>
+      <a href="https://www.instagram.com">Instagram</a> | 
+      <a href="https://whatsupp.com">Whatsupp</a> |
+      <a href="yhteystiedot.html">Yhteystiedot</a>
+    </p>
+  </footer>
+</body>
+</html>
